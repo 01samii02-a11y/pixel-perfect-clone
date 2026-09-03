@@ -64,34 +64,40 @@ const principles = [
 function Home() {
   return (
     <Shell>
-      {/* Hero */}
+      {/* Hero — asymmetric two-column with deliberate vertical offset */}
       <section className="hero-field">
-        <div className="container-narrow pb-24 pt-20 md:pb-36 md:pt-32">
-            <p className="eyebrow">Opportunity matching</p>
-            <h1 className="mt-8 max-w-4xl font-display text-[2.75rem] leading-[1.03] tracking-[-0.02em] text-foreground sm:text-6xl lg:text-[5rem]">
-              Some businesses are
-              <span className="text-accent italic"> already looking</span> for what you do.
-            </h1>
-            <p className="mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Diagonn works in the space between a business need and the business that can meet it.
-              We read the need, consider the fit, and make a small number of introductions worth
-              someone&apos;s time.
-            </p>
-            <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4">
-              <Link to="/contact" className="btn-primary">
-                Start a Conversation
-              </Link>
-              <Link to="/services" className="btn-quiet">
-                See what we do
-              </Link>
+        <div className="container-narrow pb-24 pt-20 md:pb-36 md:pt-28">
+          <div className="grid gap-12 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-8">
+              <p className="eyebrow">Opportunity matching</p>
+              <h1 className="mt-8 max-w-4xl font-display text-[2.75rem] leading-[1.03] tracking-[-0.03em] text-foreground sm:text-6xl lg:text-[5.5rem]">
+                Some businesses are
+                <span className="text-accent"> already looking</span> for what you do.
+              </h1>
             </div>
+            <div className="md:col-span-4 md:col-start-9 md:pb-4">
+              <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
+                Diagonn works in the space between a business need and the business that can meet it.
+                We read the need, consider the fit, and make a small number of introductions worth
+                someone&apos;s time.
+              </p>
+              <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
+                <Link to="/contact" className="btn-primary">
+                  Start a Conversation
+                </Link>
+                <Link to="/services" className="btn-quiet">
+                  See what we do
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* The business need */}
+      {/* The business need — asymmetric offset */}
       <section className="section border-t border-border">
-        <div className="container-narrow grid gap-14 md:grid-cols-12">
-          <div className="md:col-span-5">
+        <div className="container-narrow grid gap-14 md:grid-cols-12 md:items-start">
+          <div className="md:col-span-5 md:col-start-1">
             <Reveal>
               <SectionHeading eyebrow="The friction" title="Finding the right counterpart is slow, and mostly guesswork." />
             </Reveal>
@@ -122,13 +128,15 @@ function Home() {
       {/* Capabilities */}
       <section className="section border-t border-border">
         <div className="container-narrow">
-          <Reveal>
-            <SectionHeading
-              eyebrow="What we do"
-              title="Four ways a connection gets made."
-              intro="These are capabilities, not packaged products. The emphasis shifts with the need in front of us."
-            />
-          </Reveal>
+          <div className="md:max-w-2xl">
+            <Reveal>
+              <SectionHeading
+                eyebrow="What we do"
+                title="Four ways a connection gets made."
+                intro="These are capabilities, not packaged products. The emphasis shifts with the need in front of us."
+              />
+            </Reveal>
+          </div>
           <div className="mt-16 rule-list">
             {capabilities.map((c, i) => (
               <Reveal key={c.name} delay={i * 90}>
@@ -150,12 +158,14 @@ function Home() {
       {/* How it works */}
       <section className="section bg-inverse text-inverse-foreground">
         <div className="container-narrow">
-          <Reveal>
-            <p className="eyebrow text-accent-soft">How it works</p>
-            <h2 className="mt-5 max-w-2xl font-display text-3xl leading-[1.08] tracking-tight md:text-5xl">
-              Four steps. No machinery in between.
-            </h2>
-          </Reveal>
+          <div className="md:max-w-2xl">
+            <Reveal>
+              <p className="eyebrow text-accent-soft">How it works</p>
+              <h2 className="mt-5 font-display text-3xl leading-[1.08] tracking-tight md:text-5xl">
+                Four steps. No machinery in between.
+              </h2>
+            </Reveal>
+          </div>
           <ol className="mt-16 grid gap-px sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
               <Reveal key={s.n} delay={i * 110}>
@@ -173,9 +183,11 @@ function Home() {
       {/* Who it helps */}
       <section className="section border-t border-border">
         <div className="container-narrow">
-          <Reveal>
-            <SectionHeading eyebrow="Who it helps" title="Written for people who decide." />
-          </Reveal>
+          <div className="md:max-w-2xl">
+            <Reveal>
+              <SectionHeading eyebrow="Who it helps" title="Written for people who decide." />
+            </Reveal>
+          </div>
           <div className="mt-14 grid gap-x-14 gap-y-0 md:grid-cols-2">
             {audiences.map((a, i) => (
               <Reveal key={a.t} delay={i * 70}>
@@ -189,15 +201,15 @@ function Home() {
         </div>
       </section>
 
-      {/* Why this approach */}
+      {/* Why this approach — asymmetric offset */}
       <section className="section border-t border-border">
-        <div className="container-narrow grid gap-14 md:grid-cols-12">
-          <div className="md:col-span-4">
+        <div className="container-narrow grid gap-14 md:grid-cols-12 md:items-start">
+          <div className="md:col-span-5">
             <Reveal>
               <SectionHeading eyebrow="Why this way" title="A quieter method, held on purpose." />
             </Reveal>
           </div>
-          <div className="md:col-span-7 md:col-start-6">
+          <div className="md:col-span-6 md:col-start-7">
             <div className="rule-list">
               {principles.map((p, i) => (
                 <Reveal key={p.t} delay={i * 90}>
@@ -216,8 +228,8 @@ function Home() {
       <section className="border-t border-border py-24 md:py-36">
         <div className="container-narrow">
           <Reveal>
-            <p className="max-w-4xl font-display text-3xl leading-[1.12] tracking-[-0.015em] text-foreground sm:text-4xl md:text-[3.5rem]">
-              Fit is the whole discipline. <span className="text-accent italic">Everything else</span>{" "}
+            <p className="max-w-4xl font-display text-3xl leading-[1.12] tracking-[-0.02em] text-foreground sm:text-4xl md:text-[3.5rem]">
+              Fit is the whole discipline. <span className="text-accent">Everything else</span>{" "}
               is just volume wearing a better suit.
             </p>
           </Reveal>
