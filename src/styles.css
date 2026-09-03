@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Diagonn design system — Ocean Deep mood.
- * Display: Space Grotesk. Body: DM Sans. Accent: cool teal.
+ * Diagonn design system — washed-blue drafting paper.
+ * Display: Space Grotesk. Body: DM Sans. Accent: deep teal.
  * All colors are oklch semantic tokens. Never hardcode colors in components.
  */
 
@@ -43,29 +43,28 @@
 :root {
   --radius: 0.125rem;
 
-  /* Ocean Deep palette, converted to oklch for exact tokens */
-  --background: oklch(from #0c2340 l c h);
-  --foreground: oklch(0.96 0.005 215);
-  --card: oklch(from #0f2a4a l c h);
-  --card-foreground: oklch(0.96 0.005 215);
-  --popover: oklch(from #0f2a4a l c h);
-  --popover-foreground: oklch(0.96 0.005 215);
-  --primary: var(--foreground);
-  --primary-foreground: var(--background);
-  --secondary: oklch(from #1a4a6e l c h);
-  --secondary-foreground: var(--foreground);
-  --muted: oklch(from #1a4a6e l c h);
-  --muted-foreground: oklch(0.65 0.04 200);
-  --accent: oklch(from #5cbdb9 l c h);
-  --accent-foreground: oklch(from #0c2340 l c h);
-  --accent-soft: oklch(from #2d8a9e l c h);
+  --background: oklch(0.975 0.013 230);
+  --foreground: oklch(0.245 0.036 230);
+  --card: oklch(0.995 0.005 230);
+  --card-foreground: oklch(0.245 0.036 230);
+  --popover: oklch(0.995 0.005 230);
+  --popover-foreground: oklch(0.245 0.036 230);
+  --primary: oklch(0.28 0.052 230);
+  --primary-foreground: oklch(0.985 0.008 230);
+  --secondary: oklch(0.92 0.03 220);
+  --secondary-foreground: oklch(0.245 0.036 230);
+  --muted: oklch(0.92 0.03 220);
+  --muted-foreground: oklch(0.47 0.03 225);
+  --accent: oklch(0.51 0.08 200);
+  --accent-foreground: oklch(0.985 0.008 230);
+  --accent-soft: oklch(0.42 0.065 205);
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.98 0.006 85);
-  --border: oklch(from #1a4a6e l c h);
-  --input: oklch(from #1a4a6e l c h);
+  --border: oklch(0.82 0.028 220);
+  --input: oklch(0.9 0.025 220);
   --ring: var(--accent);
-  --inverse: oklch(0.95 0.01 210);
-  --inverse-foreground: oklch(from #0c2340 l c h);
+  --inverse: oklch(0.28 0.052 230);
+  --inverse-foreground: oklch(0.985 0.008 230);
 }
 
 @layer base {
@@ -111,6 +110,11 @@
   text-transform: uppercase;
   font-weight: 500;
   color: var(--color-accent-soft);
+}
+
+@utility hero-orlint {
+  background-image: radial-gradient(circle, color-mix(in oklab, var(--color-accent) 22%, transparent) 1px, transparent 1.25px);
+  background-size: 3rem 3rem;
 }
 
 @utility nav-link {

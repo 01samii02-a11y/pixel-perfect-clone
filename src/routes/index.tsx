@@ -65,23 +65,23 @@ function Home() {
   return (
     <Shell>
       {/* Hero — asymmetric two-column with deliberate vertical offset */}
-      <section className="hero-field">
+      <section className="hero-field hero-orlint">
         <div className="container-narrow pb-24 pt-20 md:pb-36 md:pt-28">
-          <div className="grid gap-12 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-8">
+          <div className="mx-auto max-w-6xl text-center">
+            <div>
               <p className="eyebrow">Opportunity matching</p>
-              <h1 className="mt-8 max-w-4xl font-display text-[2.75rem] leading-[1.03] tracking-[-0.03em] text-foreground sm:text-6xl lg:text-[5.5rem]">
+              <h1 className="mx-auto mt-8 max-w-5xl font-display text-[2.75rem] leading-[1.03] tracking-[-0.03em] text-foreground sm:text-6xl lg:text-[5.5rem]">
                 Some businesses are
                 <span className="text-accent"> already looking</span> for what you do.
               </h1>
             </div>
-            <div className="md:col-span-4 md:col-start-9 md:pb-4">
-              <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
+            <div className="mt-10">
+              <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
                 Diagonn works in the space between a business need and the business that can meet it.
                 We read the need, consider the fit, and make a small number of introductions worth
                 someone&apos;s time.
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
                 <Link to="/contact" className="btn-primary">
                   Start a Conversation
                 </Link>
