@@ -41,11 +41,6 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link to="/privacy" className="footer-link">
-                  Privacy
-                </Link>
-              </li>
             </ul>
           </nav>
           <div>

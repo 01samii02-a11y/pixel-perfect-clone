@@ -76,13 +76,6 @@ function Contact() {
                   {site.contact.formStatus}
                 </p>
               </div>
-              <p className="mt-8 text-sm text-muted-foreground">
-                See our{" "}
-                <Link to="/privacy" className="footer-link underline underline-offset-4">
-                  privacy information
-                </Link>
-                .
-              </p>
             </Reveal>
           </div>
 

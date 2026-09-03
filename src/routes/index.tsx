@@ -7,7 +7,7 @@ import { pageHead } from "@/config/site";
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
-      title: "Diagonn — Opportunity matching for business needs",
+      title: "Diagonn",
       description:
         "Diagonn listens to a business need, considers fit, and makes a small number of deliberate introductions. Start a conversation.",
       path: "/",
