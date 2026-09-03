@@ -50,7 +50,6 @@ function Services() {
     <Shell>
       <section className="hero-field border-b border-border">
         <div className="container-narrow pb-20 pt-16 md:pb-28 md:pt-24">
-          <Reveal>
             <p className="eyebrow">Services</p>
             <h1 className="mt-8 max-w-3xl font-display text-[2.5rem] leading-[1.05] tracking-[-0.02em] text-foreground md:text-6xl">
               Four capabilities, applied to{" "}
@@ -60,7 +59,6 @@ function Services() {
               How they are used depends entirely on what you are trying to achieve. Nothing here is
               sold as a package or measured by volume.
             </p>
-          </Reveal>
         </div>
       </section>
 

@@ -47,12 +47,10 @@ function Contact() {
     <Shell>
       <section className="hero-field border-b border-border">
         <div className="container-narrow pb-16 pt-16 md:pb-24 md:pt-24">
-          <Reveal>
             <p className="eyebrow">Contact</p>
             <h1 className="mt-8 max-w-3xl font-display text-[2.5rem] leading-[1.05] tracking-[-0.02em] text-foreground md:text-6xl">
               Describe the need. <span className="text-accent italic">We will be straight with you.</span>
             </h1>
-          </Reveal>
         </div>
       </section>
 

@@ -19,13 +19,11 @@ function About() {
     <Shell>
       <section className="hero-field border-b border-border">
         <div className="container-narrow pb-20 pt-16 md:pb-28 md:pt-24">
-          <Reveal>
             <p className="eyebrow">About</p>
             <h1 className="mt-8 max-w-3xl font-display text-[2.5rem] leading-[1.05] tracking-[-0.02em] text-foreground md:text-6xl">
               A small practice built around one question:{" "}
               <span className="text-accent italic">does this actually fit?</span>
             </h1>
-          </Reveal>
         </div>
       </section>
 
