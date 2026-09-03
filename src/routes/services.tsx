@@ -11,7 +11,7 @@ export const Route = createFileRoute("/services")({
         "Four Diagonn capabilities: opportunity matching, business introductions, capability discovery and partnership connections.",
       path: "/services",
     }),
-  component: Services;
+  component: Services,
 });
 
 const services = [
