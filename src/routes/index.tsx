@@ -67,23 +67,16 @@ function Home() {
       {/* Hero */}
       <section className="hero-field">
         <div className="container-narrow pb-24 pt-20 md:pb-36 md:pt-32">
-          <Reveal>
             <p className="eyebrow">Opportunity matching</p>
-          </Reveal>
-          <Reveal delay={120}>
             <h1 className="mt-8 max-w-4xl font-display text-[2.75rem] leading-[1.03] tracking-[-0.02em] text-foreground sm:text-6xl lg:text-[5rem]">
               Some businesses are
               <span className="text-accent italic"> already looking</span> for what you do.
             </h1>
-          </Reveal>
-          <Reveal delay={240}>
             <p className="mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Diagonn works in the space between a business need and the business that can meet it.
               We read the need, consider the fit, and make a small number of introductions worth
               someone&apos;s time.
             </p>
-          </Reveal>
-          <Reveal delay={340}>
             <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4">
               <Link to="/contact" className="btn-primary">
                 Start a Conversation
@@ -92,7 +85,6 @@ function Home() {
                 See what we do
               </Link>
             </div>
-          </Reveal>
         </div>
       </section>
 
